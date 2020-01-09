@@ -1,2 +1,2 @@
 # ProyectoAngular
-Billetera virtual
+Billetera virtual introduccion a angularjs y nodejs
