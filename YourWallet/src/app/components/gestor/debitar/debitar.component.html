@@ -1,0 +1,13 @@
+<app-navbargestor></app-navbargestor>
+<br><br>
+  <div class="login-card"><img src="../../../assets/img/Acreditar.png" class="profile-img-card">
+    <p class="profile-name-card"> </p>
+    <form class="form-signin"><span class="reauth-email"> </span>
+        
+        <input class="form-control" [(ngModel)]="dni" [ngModelOptions]="{standalone: true}" type="text" class="form-control" placeholder="Ingrese DNI">
+        <input class="form-control" [(ngModel)]="saldo" [ngModelOptions]="{standalone: true}" type="number" class="form-control" placeholder="$">
+        <br>
+        <button class="btn btn-primary btn-block btn-lg btn-signin" type="submit" (click)="debitarDinero()">Debitar</button>
+    </form>
+  
+  </div>

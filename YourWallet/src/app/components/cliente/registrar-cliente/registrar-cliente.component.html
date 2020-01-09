@@ -1,0 +1,92 @@
+<!-- 
+<div class="login-box">
+    <img class="avatar" src="../../../../assets/img/login2.png" alt="login">
+    <h1>YourWallet</h1>
+  
+    <form class="login">
+            <label>Nombre </label>
+            <div><input [(ngModel)]="nombre" name="nombre" type="text" /></div>
+        
+            <label>Apellido </label>
+            <div><input [(ngModel)]="apellido" name="apellido" type="text" /></div>
+
+            <label>DNI</label>
+            <div><input [(ngModel)]="dni" name="dni" type="number" /></div>
+
+            <label>Email </label>
+            <div><input [(ngModel)]="email" name="email" type="email" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)[.][a-zA-Z]{1,5}" /></div>
+            
+            <label>Fecha de Nacimiento </label>
+            <div><input [(ngModel)]="fecha_nacimiento" name="element_2" type="date" /></div>
+
+            <label>Provincia</label>
+            <div>
+        
+                <select (change)="onChange($event)">
+                <option *ngFor="let provincia of provincias" [value]="provincia.nombre" >
+                  {{provincia.nombre}}</option>
+            </select>
+            </div>
+            <label>Usuario </label>
+            <div><input [(ngModel)]="usuario" name="usuario" type="text" /></div>
+            
+            <label>Clave </label>
+            <div><input [(ngModel)]="clave" name="clave" type="password" /></div>
+  
+            <button (click)="guardar()">Resgistrarse</button>
+            <br>
+        <a href="#" routerLink='/logincliente'>Iniciar sesion</a>
+        <br>
+        <a href="#">¿Olvidaste tu contraseña?</a>
+    </form>
+  </div> -->
+  <div class="row register-form">
+    <div class="col-md-8 offset-md-2">
+        <form class="custom-form">
+            <h1>Formulario de Registro</h1>
+            <div class="form-row form-group">
+                <div class="col-sm-4 label-column"><label class="col-form-label" for="nombre">Nombre </label></div>
+                <div class="col-sm-6 input-column"><input class="form-control" [(ngModel)]="nombre" name="nombre" type="text" /></div>
+            </div>
+            <div class="form-row form-group">
+                <div class="col-sm-4 label-column"><label class="col-form-label" for="apellido">Apellido </label></div>
+                <div class="col-sm-6 input-column"><input class="form-control" [(ngModel)]="apellido" name="apellido" type="text" /></div>
+            </div>
+            <div class="form-row form-group">
+                <div class="col-sm-4 label-column"><label class="col-form-label" for="dni">DNI </label></div>
+                <div class="col-sm-6 input-column"><input class="form-control" [(ngModel)]="dni" name="dni" type="number" /></div>
+            </div>
+            <div class="form-row form-group">
+                <div class="col-sm-4 label-column"><label class="col-form-label" for="email">Email </label></div>
+                <div class="col-sm-6 input-column"><input class="form-control" [(ngModel)]="email" name="email" type="email" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)[.][a-zA-Z]{1,5}"/></div>
+            </div>
+            <div class="form-row form-group">
+              <div class="col-sm-4 label-column"><label class="col-form-label" for="fechaNac">Fecha de Nacimiento </label></div>
+              <div class="col-sm-6 input-column"><input class="form-control" [(ngModel)]="fecha_nacimiento" name="fechaNac" type="date" /></div>
+            </div>
+            <div class="form-row form-group">
+                <div class="col-sm-4 label-column"><label class="col-form-label" for="provincia">Provincia </label></div>
+                <div class="col-sm-4 input-column">
+        
+                  <select class="btn btn-light dropdown-toggle" (change)="onChange($event)">
+                  <option class="dropdown-toggle " *ngFor="let provincia of provincias" [value]="provincia.nombre" >
+                    {{provincia.nombre}}</option>
+              </select>
+              </div>
+            </div>
+            <div class="form-row form-group">
+              <div class="col-sm-4 label-column"><label class="col-form-label" for="usuario">Usuario </label></div>
+              <div class="col-sm-6 input-column"><input class="form-control" [(ngModel)]="usuario" name="usuario" type="text" /></div>
+            </div>
+            <div class="form-row form-group">
+              <div class="col-sm-4 label-column"><label class="col-form-label" for="contraseña">Contraseña </label></div>
+              <div class="col-sm-6 input-column"><input class="form-control" [(ngModel)]="clave" name="contraseña" type="password"  /></div>
+            </div>
+            <button class="btn btn-light submit-button" (click)="guardar()" type="button">Registrarse</button>
+            <div class="form-row form-group">
+              <div class="label-column"><a routerLink="/logincliente">Iniciar sesion</a></div> 
+            </div>
+          </form>
+
+    </div>
+</div>

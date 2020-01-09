@@ -1,0 +1,35 @@
+<!-- <app-navbarcliente></app-navbarcliente> -->
+<!-- 
+<div class="login-box">
+    <img class="avatar" src="../../../assets/img/login2.png" alt="login">
+    <h1>YourWallet</h1>
+  
+    <form class="login">
+        <label for="username">Usuario</label>
+        <input [(ngModel)]="user" [ngModelOptions]="{standalone: true}" type="text" placeholder="Ingrese su Usuario">
+  
+        <label for="password">Contraseña</label>
+        <input [(ngModel)]="pass" [ngModelOptions]="{standalone: true}"  type="password" placeholder="Contraseña">
+  
+        <input type="submit" routerLink="/transferirdinero" value="Ingresar">  
+        <a href="#" routerLink='/registrar-cliente'>Registrarse</a>
+        <br>
+        <a href="#">¿Olvidaste tu contraseña?</a>
+    </form>
+</div> -->
+
+<div class="login-card"><img src="../../../assets/img/login2.png" class="profile-img-card">
+    <p class="profile-name-card"> </p>
+    <form class="form-signin"><span class="reauth-email"> </span>
+        <input class="form-control" [(ngModel)]="user" [ngModelOptions]="{standalone: true}" type="text" required="" placeholder="Usuario" autofocus="" id="inputEmail">
+        <input class="form-control" [(ngModel)]="pass" [ngModelOptions]="{standalone: true}"  type="password" required="" placeholder="Contraseña" id="inputPassword">
+        <div class="checkbox">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="formCheck-4">
+            </div>
+        </div>
+        <button class="btn btn-primary btn-block btn-lg btn-signin" (click)="validar()" type="submit">Iniciar Sesion</button>
+    </form>
+    <a href="#" class="forgot-password" routerLink='/registrar-cliente'>Registrate aqui</a> <br>
+    <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+</div>
