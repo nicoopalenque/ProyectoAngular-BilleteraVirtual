@@ -1,4 +1,6 @@
 # ProyectoAngular
 Billetera virtual introduccion a angularjs y nodejs
 
-Cliente user: nicolas password: palenque
+## Login Cliente: 
+#### user: nicolas 
+#### password: palenque
